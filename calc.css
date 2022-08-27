@@ -1,0 +1,76 @@
+.calculator {
+  padding: 10px;
+  border-radius: 1em;
+  height: 283px;
+  width: 424px;
+  margin: auto;
+  background-color: black; 
+}
+
+.display-box {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  background-color: #969ba1;
+  color:whitesmoke;
+  border-radius: 5px;
+  width: 124%;
+  height: 53%;
+  padding: 10px;
+}
+
+#btn {
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(167, 159, 159, 0.228);
+  font-weight: bold;
+  font-size: medium;
+  color: rgb(29, 212, 151);
+  cursor: pointer;
+  width: 86px;
+  height: 30px;
+}
+
+#btn:hover{
+  transform: scale(1.2);
+  background-color: rgba(159, 150, 150, 0.228);
+  color: rgb(13, 236, 162);
+  }
+
+#equal {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  width: 86px;
+  height: 30px;
+  background: #8ab4f8;
+  color: #202124;
+  border: 1px solid #8ab4f8;
+  border-radius: 4px;
+}
+
+#equal:hover{
+  transform: scale(1.2);
+  background-color:  #77a5f1;
+  color: #1d1e20;
+  }
+
+input[type=button] {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  height: 30px;
+  outline: none;
+  background: #3c4043;
+  color: #e8eaed;
+  border: 1px solid #3c4043;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 86px;
+}
+
+input[type=button]:hover{
+  transform: scale(1.2);
+  background-color: #333639;
+  color: #eceff2;
+  }
