@@ -1,40 +1,49 @@
 .calculator {
   padding: 10px;
   border-radius: 1em;
-  height: 283px;
-  width: 424px;
+  height: 246px;
+  width: 373px;
   margin: auto;
-  background-color: black; 
+  background-color: black;
 }
 
-.display-box {
+.calculator #display {
   font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  font-size: medium;
-  background-color: #969ba1;
-  color:whitesmoke;
-  border-radius: 5px;
-  width: 124%;
-  height: 53%;
-  padding: 10px;
+font-weight: bold;
+font-size: medium;
+background-color: #969ba1;
+color:whitesmoke;
+border-radius: 5px;
+width: 94%;
+height: 11%;
+padding: 10px;
 }
 
-#btn {
-  font-family: 'Orbitron', sans-serif;
-  background-color: rgba(167, 159, 159, 0.228);
-  font-weight: bold;
-  font-size: medium;
-  color: rgb(29, 212, 151);
-  cursor: pointer;
-  width: 86px;
-  height: 30px;
+.calculator table {
+  text-align: center;
+  margin-top: 15px;
 }
 
-#btn:hover{
-  transform: scale(1.2);
-  background-color: rgba(159, 150, 150, 0.228);
-  color: rgb(13, 236, 162);
+.calculator table td {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    height: 30px;
+    outline: none;
+    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #3c4043;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 86px;
+    
   }
+  
+  .calculator table td:hover{
+    background-color: #333639;
+    color: #eceff2;
+    }
+
 
 #equal {
   font-family: 'Orbitron', sans-serif;
@@ -50,27 +59,24 @@
 }
 
 #equal:hover{
-  transform: scale(1.2);
-  background-color:  #77a5f1;
-  color: #1d1e20;
+  background-color:  #6399f1;
+  color: #07080a;
   }
 
-input[type=button] {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  font-size: medium;
-  height: 30px;
-  outline: none;
-  background: #3c4043;
-  color: #e8eaed;
-  border: 1px solid #3c4043;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 86px;
-}
-
-input[type=button]:hover{
-  transform: scale(1.2);
-  background-color: #333639;
-  color: #eceff2;
+  #btn {
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(167, 159, 159, 0.228);
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(29, 212, 151);
+    cursor: pointer;
+    width: 86px;
+    height: 30px;
+    padding: 1px;
+    margin: 10px;
   }
+  
+  #btn:hover{
+    background-color: rgba(111, 98, 98, 0.228);
+    color: rgb(13, 220, 151);
+    }  

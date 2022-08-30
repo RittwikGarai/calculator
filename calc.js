@@ -1,16 +1,31 @@
-// This function clear all the values
-function clearScreen() {
-  document.getElementById("result").value = "";
+function handler(event) {
+  const value = event.target.innerText
+  const display = document.getElementById("display")
+  
+  switch(value) {
+    case "Cl":
+      display.innerText = ""
+      break
+
+    case "⬅":
+     display.innerText = display.innerText.slice(0, -1)
+      break
+      
+    case "=":
+      display.innerText = eval(display.innerText)
+      break
+    
+    default:
+      display.innerText += value
+  }
 }
 
-// This function display values
-function display(value) {
-  document.getElementById("result").value += value;
-}
-
-// This function evaluates the expression and returns result
-function calculate() {
-  var p = document.getElementById("result").value;
-  var q = eval(p);
-  document.getElementById("result").value = q;
-}
+Array
+  .from(
+    document.getElementsByTagName("td")
+  )
+  .forEach(
+    (td) => {
+      td.addEventListener("click", handler)
+    }
+  )
